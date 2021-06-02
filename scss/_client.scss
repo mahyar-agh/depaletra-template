@@ -1,0 +1,93 @@
+section.clientOuterContainer {
+    background-color: whitesmoke;
+    &>div.clientInnerContainer {
+        &>div.clientContainer {
+            &>div.titleContainer {
+                margin-bottom: 50px;
+                &>span {
+                    font-size: 1.2rem;
+                    letter-spacing: 5px;
+                    margin-bottom: 30px;
+                }
+                &>h2 {
+                    font-size: 5rem;
+                }
+            }
+            &>div.boxOuterContainer {
+                &>div.boxContainer1 {
+                    flex-wrap: wrap;
+                    &>div.col-des-3 {
+                        padding: 25px 50px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        border-right: 1px solid rgba(0, 0, 0, 0.1);
+                        cursor: pointer;
+                        &>img {
+                            opacity: 0.6;
+                            transition: 200ms;
+                        }
+                        &:hover {
+                            &>img {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &>div.Border-none {
+                        border-right: none;
+                    }
+                }
+                &>div.boxContainer2 {
+                    flex-wrap: wrap;
+                    &>div.col-des-3 {
+                        padding: 25px 50px;
+                        border-right: 1px solid rgba(0, 0, 0, 0.1);
+                        cursor: pointer;
+                        &>img {
+                            opacity: 0.6;
+                            transition: 200ms;
+                        }
+                        &:hover {
+                            &>img {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &>div.Border-none {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:900px) {
+        &>div.clientInnerContainer {
+            &>div.clientContainer {
+                &>div.titleContainer {
+                    &>span {
+                        font-size: 1rem;
+                        letter-spacing: 5px;
+                        margin-bottom: 20px;
+                    }
+                    &>h2 {
+                        font-size: 3rem;
+                    }
+                }
+                &>div.boxOuterContainer {
+                    &>div.boxContainer1 {
+                        flex-wrap: wrap;
+                        &>div.col-des-3 {
+                            border: none;
+                            padding: 20px;
+                        }
+                    }
+                    &>div.boxContainer2 {
+                        flex-wrap: wrap;
+                        &>div.col-des-3 {
+                            border: none;
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

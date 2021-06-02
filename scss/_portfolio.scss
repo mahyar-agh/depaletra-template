@@ -1,0 +1,147 @@
+section.portfolioOuterContainer {
+    &>div.portfolioInnerContainer {
+        &>div.titleContainer {
+            margin-bottom: 30px;
+            &>span {
+                font-size: 1.2rem;
+                letter-spacing: 5px;
+                margin-bottom: 20px;
+            }
+            &>h2 {
+                font-size: 5rem;
+                &>span {
+                    color: $main-Yellow;
+                }
+            }
+        }
+        &>div.boxOuterContainer {
+            &>div.boxContainer {
+                flex-wrap: wrap;
+                div.box {
+                    padding: 15px;
+                    position: relative;
+                    cursor: pointer;
+                    &>div.glass {
+                        width: calc(100% - 30px);
+                        height: calc(100% - 30px);
+                        position: absolute;
+                        // bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                        background-color: rgba(253, 226, 49, 0.8);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 300ms;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: center;
+                        &>h2 {
+                            font-size: 3rem;
+                            margin-bottom: 10px;
+                            letter-spacing: 5px;
+                            position: relative;
+                            transform: translateX(-10%);
+                            opacity: 0;
+                            transition: 300ms 100ms;
+                        }
+                        &>span {
+                            font-size: 1.2rem;
+                            letter-spacing: 5px;
+                            margin-bottom: 40px;
+                            transform: translateX(-10%);
+                            opacity: 0;
+                            transition: 300ms 100ms;
+                        }
+                    }
+                    &:hover {
+                        &>div.glass {
+                            opacity: 1;
+                            visibility: visible;
+                            &>h2,
+                            &>span {
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:900px) {
+        &>div.portfolioInnerContainer {
+            width: 85%;
+            margin: 0 auto;
+            &>div.titleContainer {
+                &>span {
+                    font-size: 1.1rem;
+                }
+                &>h2 {
+                    font-size: 3rem;
+                }
+            }
+            &>div.boxOuterContainer {
+                &>div.boxContainer {
+                    flex-wrap: wrap;
+                    &>div.box {
+                        &>div.glass {
+                            opacity: 1;
+                            visibility: visible;
+                            height: auto;
+                            bottom: 15px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &>h2 {
+                                font-size: 2.4rem;
+                                letter-spacing: 3px;
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateX(0);
+                                padding-top: 10px;
+                            }
+                            &>span {
+                                font-size: 1.1rem;
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateX(0);
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:600px) {
+        &>div.portfolioInnerContainer {
+            width: 95%;
+            margin: 0 auto;
+            &>div.titleContainer {
+                &>span {
+                    font-size: 1rem;
+                }
+                &>h2 {
+                    font-size: 2.8rem;
+                }
+            }
+            &>div.boxOuterContainer {
+                &>div.boxContainer {
+                    flex-wrap: wrap;
+                    &>div.box {
+                        &>div.glass {
+                            &>h2 {
+                                font-size: 2rem;
+                                letter-spacing: 3px;
+                            }
+                            &>span {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

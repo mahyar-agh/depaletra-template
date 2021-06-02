@@ -1,0 +1,89 @@
+section.sliderContainer {
+    background-image: url("../assets/image/bg-image-1-1920x800.jpg");
+    &>.logo {
+        position: absolute;
+        top: 0;
+        left: 5%;
+    }
+    &>div.contentContainer {
+        width: 60%;
+        letter-spacing: 10px;
+        &>h1 {
+            background-color: $main-Yellow;
+            font-size: 10rem;
+            font-family: 'Signika-Light';
+            font-weight: normal;
+            padding: 5px 15px;
+            margin-bottom: 30px;
+        }
+        &>p {
+            background-color: #fff;
+            font-size: 1.7rem;
+            color: black;
+            margin-bottom: 60px;
+            padding: 0 3px;
+            letter-spacing: 7px;
+            word-spacing: 5px;
+        }
+        &>span.yellowColor {
+            letter-spacing: 2px;
+            border-bottom: 1px solid #000;
+            font-size: 1.5rem;
+            color: black;
+            transition: 200ms;
+            display: flex;
+            padding: 5px 0;
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+            &::before {
+                content: "";
+                display: flex;
+                position: absolute;
+                transform-origin: center bottom;
+                width: 100%;
+                height: 100%;
+                z-index: 9;
+                top: 0;
+                left: 0;
+                transform: scaleY(0);
+                transition: 200ms;
+                // background-color: red;
+            }
+            &:hover {
+                &::before {
+                    background-color: rgba(253, 226, 49, 0.8);
+                    transform: scaleY(1);
+                }
+            }
+        }
+    }
+    @media screen and (max-width:900px) {
+        height: 70vh;
+        &>div.logo {
+            transform: translateY(-30px);
+            left: 0;
+            padding-left: 20px;
+        }
+        div.contentContainer {
+            &>h1 {
+                font-size: 5rem;
+            }
+        }
+    }
+    @media screen and (max-width:600px) {
+        div.contentContainer {
+            &>h1 {
+                font-size: 2.7rem;
+            }
+            p {
+                font-size: 1.3rem;
+                margin-bottom: 30px;
+                // padding: 0;
+            }
+            &>span.yellowColor {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

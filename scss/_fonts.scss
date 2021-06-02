@@ -1,0 +1,126 @@
+// fonts
+// light
+@font-face {
+    font-family: 'Signika-Light';
+    src: url('../assets/fonts/Signika-Light.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika-Light';
+    src: url(../assets/fonts/Signika-Light.woff) format('woff'), url('../assets/fonts/Signika-Light.ttf') format('truetype'), url('../assets/fonts/Signika-Light.svg#Signika-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//   regular
+@font-face {
+    font-family: 'Signika-Regular';
+    src: url('../assets/fonts/Signika-Regular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika-Regular';
+    src: url(../assets/fonts/Signika-Regular.woff) format('woff'), url('../assets/fonts/Signika-Regular.ttf') format('truetype'), url('../assets/fonts/Signika-Regular.svg#Signika-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//   semiBold
+@font-face {
+    font-family: 'Signika-SemiBold';
+    src: url('../assets/fonts/Signika-SemiBold.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika-SemiBold';
+    src: url(../assets/fonts/Signika-SemiBold.woff) format('woff'), url('../assets/fonts/Signika-SemiBold.ttf') format('truetype'), url('../assets/fonts/Signika-SemiBold.svg#Signika-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// fontIcon
+@font-face {
+    font-family: 'fontello';
+    src: url('../assets/fonts/fontIcon/fontello.eot?53983754');
+    src: url('../assets/fonts/fontIcon/fontello.eot?53983754#iefix') format('embedded-opentype'), url('../assets/fonts/fontIcon/fontello.woff2?53983754') format('woff2'), url('../assets/fonts/fontIcon/fontello.woff?53983754') format('woff'), url('../assets/fonts/fontIcon/fontello.ttf?53983754') format('truetype'), url('../assets/fonts/fontIcon/fontello.svg?53983754#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down-open:before {
+    content: '\e800';
+}
+
+
+/* '' */
+
+.icon-up-open:before {
+    content: '\e801';
+}
+
+
+/* '' */
+
+.icon-call:before {
+    content: '\e802';
+}
+
+
+/* '' */
+
+.icon-mail:before {
+    content: '\e803';
+}
+
+
+/* '' */
+
+.icon-instagram:before {
+    content: '\f16d';
+}
+
+
+/* '' */
+
+.icon-twitter:before {
+    content: '\f309';
+}
+
+
+/* '' */
+
+.icon-facebook:before {
+    content: '\f30c';
+}
+
+
+/* '' */
+
+.icon-linkedin:before {
+    content: '\f318';
+}
+
+
+/* '' */

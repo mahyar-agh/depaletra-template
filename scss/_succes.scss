@@ -1,0 +1,165 @@
+section.succesOutercontainer {
+    &>div.seccesInnerContainer {
+        &>div.succesContainer {
+            &>div.titleContainer {
+                margin-bottom: 50px;
+                &>span {
+                    font-size: 1.2rem;
+                    letter-spacing: 5px;
+                    margin-bottom: 25px;
+                }
+                &>h2 {
+                    &>span {
+                        color: $main-Yellow;
+                    }
+                }
+            }
+            &>div.boxContainer {
+                &>div.box {
+                    position: relative;
+                    cursor: pointer;
+                    &>div.glass {
+                        position: absolute;
+                        width: calc(100% - 40px);
+                        height: 100%;
+                        bottom: 0;
+                        left: 50%;
+                        background-color: rgba(253, 226, 49, 0.8);
+                        z-index: 10;
+                        transform: translateX(-50%);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 300ms;
+                        &>h2 {
+                            font-size: 3rem;
+                            margin-bottom: 10px;
+                            letter-spacing: 5px;
+                            position: relative;
+                            transform: translateX(-10%);
+                            opacity: 0;
+                            transition: 300ms 100ms;
+                        }
+                        &>span {
+                            font-size: 1.4rem;
+                            letter-spacing: 5px;
+                            margin-bottom: 50px;
+                            transform: translateX(-10%);
+                            opacity: 0;
+                            transition: 300ms 100ms;
+                        }
+                        &>div.iconContainer {
+                            &>i {
+                                font-size: 1.8rem;
+                                color: black;
+                                margin: 0 5px;
+                                transform: translateX(-50%);
+                                opacity: 0;
+                                transition: 300ms 100ms;
+                            }
+                        }
+                    }
+                    &:hover {
+                        &>div.glass {
+                            opacity: 1;
+                            visibility: visible;
+                            &>h2,
+                            &>span,
+                            &>div.iconContainer>i {
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:900px) {
+        &>div.seccesInnerContainer {
+            &>div.succesContainer {
+                width: 85%;
+                margin: 0 auto;
+                &>div.titleContainer {
+                    &>span {
+                        font-size: 1.1rem;
+                    }
+                    &>h2 {
+                        font-size: 3rem;
+                    }
+                }
+                &>div.boxContainer {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    &>div.box {
+                        margin-top: 25px;
+                        &>div.glass {
+                            height: auto;
+                            opacity: 1;
+                            visibility: visible;
+                            bottom: 20px;
+                            &>h2 {
+                                font-size: 2.2rem;
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                            &>span {
+                                font-size: 1.1rem;
+                                margin-bottom: 10px;
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                            &>div.iconContainer {
+                                &>i {
+                                    font-size: 1.4rem;
+                                    transform: translateX(0);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:600px) {
+        &>div.seccesInnerContainer {
+            &>div.succesContainer {
+                width: 95%;
+                margin: 0 auto;
+                &>div.titleContainer {
+                    &>span {
+                        font-size: 1rem;
+                    }
+                    &>h2 {
+                        font-size: 2.8rem;
+                    }
+                }
+                &>div.boxContainer {
+                    &>div.box {
+                        &>div.glass {
+                            &>h2 {
+                                font-size: 2.2rem;
+                                letter-spacing: 2px;
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                            &>span {
+                                font-size: 1.1rem;
+                                margin-bottom: 10px;
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                            &>div.iconContainer {
+                                &>i {
+                                    font-size: 1.2rem;
+                                    transform: translateX(0);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
